@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         
         <!-- HERO SECTION -->
         <section class="hero">
-            <img src="images/torshov.jpg" class="hero-image">
             <div class="hero-text">
-                <h1>Visit Torshov</h1>
-                <h2>Enjoy culture and sports in this vibrant district close to the center of Oslo.</h2>
+                <h1 class="hero-title">Visit Bora Bora</h1>
+                <h2 class="hero-snip">Enjoy fun in the sun.</h2>
             </div>
-                
         </section>
         
         <!-- ACTIVITIES SECTION -->
-        <section class="activities">
-            
-                <div class="activities-column">
-                    <img class="activities-images" src="images/park.jpg">
-                    <p>Text here</p>
-                </div>
-                <div class="activities-column">
-                    <img class="activities-images" src="images/theatre.jpg">
-                    <p>Text here</p>
-                </div>
-                <div class="activities-column">
-                    <img class="activities-images" src="images/sports.jpg">
-                    <p>Text here</p>
-                </div>
-        </section>
-        
+        <div class="column">
+            <div>
+                <img class="column-image" src="images/Aquabike.jpg">
+                <p><strong>Aquabike</strong></p>
+                <p>Enjoy some underwater fun</p>
+            </div>
+            <div>
+                <img class="column-image" src="images/Jet-Ski.jpg">
+                <p><strong>Jet-Ski</strong></p>
+                <p>Enjoy a ride on the waves with a jet ski.</p>
+            </div>
+            <div>
+                <img class="column-image" src="images/Parasailing.jpg">
+                <p><strong>Parasailing</strong></p>
+                <p>Have some fun in the sky by parasailing.</p>
+            </div>
+        </div>
 
         <!-- GUIDE SECTION -->
-        <section class="guide">
+        <section class="card-section">
             <div class="card">
-                <img class="card-image" src="images/per.jpg">
+                <img class="card-image" src="images/bertie.jpg">
                 <div>
                     <h3>Your guide</h3>
-                    <p>"I have lived at Torshov for over 30 years, so I can show you all of its best parts and hidden secrets."</p>
-                    <h4>Per Harald Borgen</h4>
+                    <p class="card-paragraph">I haven't lived here yet, but will move here soon.</p>
+                    <h4>Albertus</h4>
                 </div>
             </div>
         </section>
-        
     </body>
 </html>

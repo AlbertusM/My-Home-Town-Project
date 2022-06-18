@@ -8,85 +8,91 @@ DARK BLUE: #1D3557
 
 */
 
-body {
+/* Universal */
+
+* {
     margin: 0;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
 
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #f1faee;
+}
 
+/* Hero */
 
 .hero {
-    height: 400px;
-    
-}
-
-.hero-image {
-    width: 620px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    height: 95vh;
+    background-image: url("images/hero1.jpg");
     background-size: cover;
-    height: 400px;
-    
+    background-position: top;
 }
 
 .hero-text {
-    
     position: absolute;
     top: 50%;
-    max-width: 80%;
-    width: 200px;
-    text-align: center;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 2;
-    margin-top: -40px;
-    font-size: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-h1, h2{
-    
-    color:#f1faee;
+.hero-title {
+    margin: 0 0 8px 0;
     background-color: #1D3557;
-    border-radius: 4px;
-    
+    border-radius: 6px;
+    padding: 0 7px 0 7px;
 }
 
-.activities-title {
+.hero-snip {
+    background-color: #457B9D;
+    border-radius: 6px;
+    padding: 0 7px 0 7px;
+}
+
+/* Column */
+
+.column {
+    height: 50vh;
     background-color: #f1faee;
-}
-
-.activities {
-    height: 300px;
-    
+    color: #000;
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    background-color: #f1faee;
-    
-    
+    text-align: center;
 }
 
-.activities-column {
-    margin-top: 80px;
-    
-}
-
-.activities-images {
-    border-radius: 50%;
+.column-image {
     width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    border-radius: 100%;
 }
 
+/* Card */
 
+.card-section {
+    height: 50vh;
+}
 
-
-
-.guide {
-    height: 300px;
-    
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    background-color: #A8DADC;
+    border-bottom: 6px solid #1D3557;
+    border-radius: 6px;
 }
 
 .card-image {
@@ -94,18 +100,6 @@ h1, h2{
     border-radius: 5px;
 }
 
-.card {
-    width: 400px;
-    padding: 20px;
-    display: flex;
-    justify-content: start;
-    text-align: center;
-    background: #A8DADC;
-    border-bottom: 6px solid #1D3557;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    border-radius: 6px;
+.card-paragraph {
     font-style: italic;
-
 }
