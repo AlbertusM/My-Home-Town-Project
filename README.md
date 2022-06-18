@@ -1,4 +1,4 @@
-# title(){return this.options.title||this.options.name}
+# My home town project
 
 ## Supporting Scrimba
 
