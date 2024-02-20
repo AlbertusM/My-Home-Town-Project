@@ -58,7 +58,8 @@ body {
 /* Column */
 
 .column {
-    height: 400px;
+    height: auto;
+    width: auto;
     background-color: #f1faee;
     color: #000;
     display: flex;
@@ -74,6 +75,23 @@ body {
     border-radius: 100%;
 }
 
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 300px; /* Adjust width as needed */
+    margin: 20px; /* Adjust margin as needed */
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: 100%; /* Make items full width on small screens */
+    }
+}
 
 
 /* Card */
